@@ -1,0 +1,223 @@
+@import url("./fonts.css");
+@import url("./header.css");
+
+* {
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+   font-family: "Nunito Sans", sans-serif;    
+}
+
+
+html {
+    font-size: 10px;
+}
+.image {
+    background-image: url("../img/slider.jpg");
+    background-size: cover;
+    width: 650px;
+    height: 400px;
+  }
+.container {
+    max-width: 143.8rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.main__apartment {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #111;
+}
+
+.main__apartment-block {
+    display:flex;
+    flex-direction: row;
+    margin-top: 10.7rem;
+    margin-bottom: 10rem;
+     /* background-color: red;   */
+    width: 117.1rem;
+}
+
+.main__apartment-info {
+    display:flex;
+    flex-direction: column;
+    width: 47rem;
+    gap: 3.4rem;
+     /* background-color: blue;  */
+}
+
+.main__apartment-title {
+    margin-top: 7rem;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    color: #E3B873;
+    font-family: "YesevaOne-Regular", sans-serif;
+}
+
+.main__apartment-text {
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: "NunitoSans-Regular", sans-serif;
+}
+
+.main__appartment-small {
+    display: none;
+}
+.main__apartmenr-options-column {
+    display: flex;
+    flex-direction: row;
+    gap: 6.3rem;
+    margin-bottom: 8rem;
+}
+.main__apartment-options {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 3.4rem;
+}
+
+.main__apartment-options-title {
+    margin-bottom: 0.9rem;
+    font-size: 1.8rem;
+    color: #E3B873;
+    text-transform: uppercase;
+    font-family: "YesevaOne-Regular", sans-serif;
+}
+
+.main__apartment-options-text {
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: "NunitoSans-Regular", sans-serif;  
+}
+
+
+.main__apartment-slide {
+    display:flex;
+    flex-direction: row;
+    gap: 1.75rem;
+}
+
+  .left__arrow {
+    content: url(../img/svg/leftrarrow.svg);
+    
+    cursor: pointer;
+}
+
+.right__arrow {
+    content: url(../img/svg/rightarrow.svg);
+    cursor: pointer;
+
+}
+
+.main__aparment-galery {
+    display:flex;
+    margin-left: 2rem;
+    width: 68rem;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+
+.main__apartmentlist {
+    display: flex;
+    flex-direction: row;
+    gap: 6.05rem;
+    list-style: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "YesevaOne-Regular", sans-serif;
+
+}
+
+.main__apartmentmenu ul>li>a {
+    color: #ffffff70;   
+}
+
+.main__apartmentmenu ul>li>a.active {
+    color: #E3B873; 
+    text-decoration: underline;
+}
+
+.main__apartmentmenu ul>li>a:hover {
+    color: #E3B873;
+}
+
+.main__apartment-visible {
+    position: relative;
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 15rem;
+}
+
+.main__apartment-visible-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: "YesevaOne-Regular", sans-serif;
+    color: #ffff;
+    font-weight: 100;
+}
+
+.main__apartment-visible-image {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.main__apartment-visible-video {
+    display: flex;
+    position: absolute;
+    justify-content: center ;
+    top: 10rem;
+}
+
+.main__apartment-visible-video::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+}
+
+.main__apartment-visible-cam {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.main__apartment-visible-play {
+    position: absolute;
+    align-self: center;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.circleOne, .circleTwo, .circleThree {
+    margin-top: 2px;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
