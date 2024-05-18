@@ -46,16 +46,29 @@ const entities = [
  
 
   prev.addEventListener('click', () => {
-    setEntity(currentIndex - 1);
-    currentIndex -= 1;
+    setEntity(currentIndex);
+    if (currentIndex <=0) {
+      currentIndex = 2;
+    } else {
+      currentIndex -= 1;
+    }
   })
 
 
   next.addEventListener('click', () => {
-    setEntity(currentIndex + 1);
-    currentIndex += 1;
-    
+    setEntity(currentIndex);
+    if (currentIndex >= 2) {
+      currentIndex = 0;
+    } else {
+      currentIndex += 1;
+    }
+  
   })
+
+  function showNextSlide() {
+    slideIndex = (slideIndex + 1) % slideCount;
+    updateSlider();
+  }
 
   const mainOneSlide = document.querySelector('.main__apartment-item-one')
 
